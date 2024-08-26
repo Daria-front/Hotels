@@ -1,10 +1,24 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.grid-item1{ 
+    grid-area: A;
+}
+
+.grid-item2 {
+    grid-area: B;
+}
+
+.grid-item3 {
+    grid-area: C;
 }
 
 a {
     text-decoration: none;
     color: black;
+    cursor: pointer;
 }
 ul {
     list-style: none;
@@ -15,8 +29,11 @@ img {
     max-width: 100%;
 }
 html {
-    font-family: sans-serif;
+    font-family: "Varela Round", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     background-color: #F1F1F1;
+    font-size: 16px;
 }
 .container {
     max-width: 1170px;
@@ -35,15 +52,14 @@ html {
     align-items: center;
     
 }
+
 .section-nav {
     display: flex;
-    
-
-}
-.section-nav {
+    align-items: baseline;
     background-color: white;
     border-radius: 15px;
     margin-top: 30px;
+    box-shadow: 0px 8px 6px -3px rgba(11, 21, 28, 0.2);
 }
 .section-nav-list-list {
     display: flex;
@@ -51,6 +67,9 @@ html {
     gap: 45px;
     margin-left: 45px;
     padding: 27px 0;
+}
+.section-nav-link {
+    color: #666666;
 }
 .section-nav-right {
     display: flex;
@@ -64,13 +83,18 @@ html {
     border-radius: 10px;
     padding: 13px 20px;
     color: #CC9933;
+    cursor: pointer;
 }
 .header-left {
     display: flex;
     align-items: center;
 }
 .header-tel {
+    font-family: 'MullerMedium', sans-serif;
+    font-size: 20px;
     margin-left: 40px;
+    color: #666666;
+    line-height: 1;
     
 }
 .header-right {
@@ -83,3 +107,241 @@ html {
     color: #CC9933;
     margin-left: 5px;
 }
+/*Section Hero*/
+.section-hero {
+    margin-top: 23px;
+}
+.section-hero-heading {
+    font-size: 40px;
+}
+.section-hero-info-description {
+    width: 888px;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.section-hero-cards {
+    display: grid;
+    width: 1146px; 
+    grid-template-columns: repeat(2, 1fr); /* Используем 1fr для гибкости */
+    grid-template-rows: auto; /* Устанавливаем авто высоту для строк */
+    grid-template-areas: "A C"
+                         "B C";
+    gap: 24px 24px; 
+    margin-top: 20px;
+}
+
+.section-hero-item {
+    border-radius: 15px;
+    
+}
+
+.grid-item1 {
+    background-image: url(/img/darken.png), url(/img/Maldives.jpeg);
+    
+}
+.grid-item2 {
+    background-image: url(/img/darken.png), url(/img/Krit.jpeg);
+}
+.grid-item3 {
+    background-image: url(/img/Luxs.jpeg);
+    min-width: 573px;
+    height: 540px;
+}
+.section-hero-card-heading {
+    color: white;
+    font-size: 40px;
+    font-weight: 700;
+    width: 420px;
+    margin-bottom: 0;
+    
+}
+.section-hero-cards-description {
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 15px;
+}
+
+.section-hero-card-content {
+    margin-top: 40px;
+    margin-left: 45px;
+    
+}
+
+
+.section-hero-cards-link {
+    color: #CC9933;
+    font-size: 16px;
+    
+
+}
+.section-hero-card-details {
+    margin-top: 40px;
+    
+}
+.section-hero-cards-link::after {
+    content: url(/img/strelka.svg);
+    vertical-align: middle;
+    margin-left: 5px;
+    
+}
+/*Third card Luxe*/
+.section-hero-card-heading3 {
+    color: white;
+    font-size: 57px;
+    font-weight: 700;
+    width: 299px;
+    margin-top: 0px;
+    margin-bottom: 0;
+}
+.section-hero-cards-description3 {
+    color: white;
+    font-size: 30px;
+    font-weight: 400;
+    margin-top: 15px;
+}
+.section-hero-card-content3 {
+    margin-left: 45px;
+    margin-top: 208px;
+    margin-bottom: 40px;
+    height: 288px;
+}
+.section-hero-info {
+    margin-top: 54px;
+}
+.section-hero-heading {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+.section-hero-info-description {
+    margin-top: 38px;
+}
+.section-services {
+    margin-top: 92px;
+    margin-bottom: 70px;
+}
+.section-services-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 24px;
+}
+.section-services-item {
+    max-width: 573px;
+    background-color: #fff;
+    border-radius: 15px;
+}
+
+.section-services-description-link {
+    font-size: 20px;
+    font-family: 'Muller', sans-serif;
+    color: #CC9933;
+    font-weight: 500;
+    
+
+}
+
+.section-services-description-text {
+    font-size: 16px;
+    font-family: 'Muller', sans-serif;
+    line-height: 2;
+
+}
+.section-services-exclusive {
+    
+    margin-left: 45px;
+    margin-bottom: 35px;
+    max-width: 402px;
+}
+.section-services-img {
+    margin-bottom: 23px;
+}
+.section-services-description-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+} 
+.section-services-description-icon {
+    margin-left: 5px;
+    padding-top: 2px;
+}
+/*section-advantages*/
+
+.section-advantages-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 22px;
+    
+}
+.section-advantages-item {
+    padding: 40px 42px 32px 45px;
+    max-width: 276px;
+    background-color: #fff;
+    border-radius: 15px;
+
+}
+.section-advantages-img {
+    margin-bottom: 10px;
+}
+.section-advantages-description {
+    font-size: 16px;
+    line-height: 2;
+}
+
+
+.section-booking {
+    margin-top: 70px;
+}
+.section-booking-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+.section-booking-item {
+    width: 374px;
+    background-color: #fff;
+    border-radius: 15px;
+    
+}
+.section-booking-price-stars {
+    display: flex;
+    margin-left: 45px;
+    margin-top: 32px;
+    
+}
+.section-booking-rank {
+    margin-left: 52px;
+}
+.section-booking-descripton {
+    margin-left: 45px;
+    margin-bottom: 45px;
+}
+.section-booking-city {
+    font-weight: 700;
+    margin-top: 16px;
+    
+}
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 13px 20px;
+}
+.section-booking-item-lastcard {
+    background: url(/img/Размещение/9.png);
+    min-height: 440px;
+}
+.section-booking-item-lastcard-description {
+    display: flex;
+    color: #fff;
+    font-size: 20px;
+    padding-top: 373px;
+    padding-left: 54px;
+    
+}
+.section-booking-item-lastcard-description::after {
+    content: url(/img/Размещение/Rectangle\ 2\ \(1\).svg);
+    margin-left: 5px;
+    padding-top: 2px;
+}
+
