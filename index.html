@@ -367,6 +367,115 @@
                 </section>
             </div>
         </section>
+        <section class="section-form">
+            <div class="container form-container"><h2 class="section-form-heading">Хочу тур</h2>
+            <form action="https://jsonplaceholder.typicode.com/posts" method="post" class="form">
+                <div class="form-group">
+               <label for="city-select">Город вылета</label>
+                <select name="city" class="city-form" id="city-select">
+                    <option value="spb">Санкт-Петербург</option>
+                    <option value="rnd">Ростов-на-Дону</option>
+                    <option value="moskow">Москва</option>
+                    <option value="ryazan">Рязань</option>
+                    <option value="omsk">Омск</option>
+                    <option value="tver">Тверь</option>
+                </select> </div>
+                <div class="form-group">
+                <label for="country-select">Страна</label> 
+                <select name="country" id="country-select" class="form-country">
+                    <option value="avstralya">Австралия</option>
+                    <option value="USA">США</option>
+                    <option value="Russia">Россия</option>
+                    <option value="China">Китай</option>
+                    <option value="Brasil">Бразилия</option>
+                    <option value="UAE">ОАЭ</option>
+                </select>
+            </div> <div class="form-group">
+                <label for="date">Дата прибытия</label> 
+                <input type="date" id="date" value="2024-09-15" min="2024-09-01" max="2025-09-01" class="date-form">
+            </div>
+            <div class="form-group">
+                <label for="nights">Кол-во ночей</label>
+                <input type="number" id="nights" value="6" class="number">
+            </div>
+            <div class="form-group">
+                <label for="tourists">Туристы</label>
+                <input required type="number" id="tourists" value="2" class="number">
+            </div>
+                <button type="submit" class="btn btn-submit"> Найти </button>
+            </form></div>
+        
+        </section>
+        <section class="section-contacts"> <h2 class="section-contacts-heading">Контакты</h2>
+            <div class="container contacts-container"> 
+                <div class="contacts-left">
+            <ul class="contacts-list">
+                <li class="contacts-item adress"> <strong class="contacts-item-heading">Адрес</strong>
+                    <div class="contacts-item-info">Москва, улица Юности,<br> дом 5 строение 4, офис 2</div>
+                </li>
+                <li class="contacts-item"> <strong class="contacts-item-heading">Телефоны</strong>
+                    <div class="contacts-item-info phones">
+                    <a href="tel:+74995356434" class="contacts-link">+7 499 535-64-34</a> <br>
+                    <a href="tel:+74950050544" class="contacts-link"> +7 495 005-05-44</a>
+                </div>
+                </li>
+                <li class="contacts-item"> <strong class="contacts-item-heading">Email</strong>
+                    <div class="contacts-item-info">
+                    <a href="mailto:lg.oona@mail.ru" class="contacts-link">lg.oona@mail.ru</a>
+                    <p class="contacts-description">По вопросам бронирования</p>
+                    <a href="mailto:hotels.ln@mail.ru" class="contacts-link">hotels.ln@mail.ru</a>
+                    <p class="contacts-description">По вопросам сотрудничества</p>
+                </div>
+                </li>
+                <li class="contacts-item"> <strong class="contacts-item-heading">График</strong>
+                    <div class="contacts-item-info scedule">Понедельник-пятница, <br> с 10:00 до 19:00</div>
+                </li>
+            
+            </ul>
+            <a href="" class="btn btn-contacts">Построить маршрут</a>
+        </div>
+        <div class="contacts-right">
+            <img src="/img/Layer 2 1.jpeg" alt="" class="contacts-img">
+        </div>
+        </div>
+        </section>
     </main>
+    <footer>
+        <section class="section-footer">
+            <div class="container footer-container">
+                <div class="footer-info">
+                    <p class="section-footer-company-name">© 2012–2020 Управляющая компания Объединённой сети «Лагуна Хотелс»</p>
+                    <p class="section-footer-company-info">Представленная на сайте информация носит справочный характер и не является публичной офертой</p>
+                    <a href="#" class="section-footer-agreement">Пользовательское соглашение</a>
+                </div>
+                <div class="footer-contacts">
+                    <p class="footer-contacts-adress">11710, улица Юности, дом 5 строение 4, офис 2</p>
+                    <div class="footer-contacts-phones">
+                    <a href="tel:+74995356434" class="contacts-link">+7 499 535-64-34</a><br>
+                    <a href="tel:+74950050544" class="contacts-link"> +7 495 005-05-44</a>
+                    </div>
+                    <a href="mailto:lg.oona@mail.ru" class="contacts-link">lg.oona@mail.ru</a> <br>
+                    <a href="mailto:hotels.ln@mail.ru" class="contacts-link">hotels.ln@mail.ru</a>
+                </div>
+                <ul class="footer-social-list">
+                    <li class="footer-social-item">
+                        <a href="https://www.tripadvisor.ru/" class="footer-social-link" target="_blank">
+                            <span class="footer-social-icon footer-social-icon-trip"></span>
+                        </a>
+                    </li>
+                    <li class="footer-social-item">
+                        <a href="https://ok.ru/" class="footer-social-link" target="_blank">
+                            <span class="footer-social-icon footer-social-icon-ok"></span>
+                        </a>
+                    </li>
+                    <li class="footer-social-item">
+                        <a href="https://vk.com/" class="footer-social-link" target="_blank">
+                            <span class="footer-social-icon footer-social-icon-vk"></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </footer>
 </body>
 </html>
