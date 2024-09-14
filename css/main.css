@@ -20,6 +20,7 @@ a {
     color: black;
     cursor: pointer;
 }
+
 ul {
     list-style: none;
     margin: 0;
@@ -72,6 +73,12 @@ html {
 .section-nav-link {
     color: #666666;
 }
+.header-tel:hover {
+    color: #da940a;
+}
+.section-nav-link:hover {
+    color: #da940a;
+}
 .section-nav-right {
     display: flex;
     align-items: center;
@@ -85,6 +92,18 @@ html {
     padding: 13px 20px;
     color: #CC9933;
     cursor: pointer;
+    transition-property: background-color, color;
+    transition-duration: 0.4s;
+    transition-timing-function: ease;
+}
+.btn:hover {
+    background-color: #CC9933;
+    color: white;
+}
+.btn:active {
+    background-color: #bd8e30;
+    color: white;
+    transform: translateY(2px);
 }
 .header-left {
     display: flex;
@@ -108,6 +127,17 @@ html {
     color: #CC9933;
     margin-left: 5px;
 }
+.header-right-link:hover {
+    color: #f8b839;
+
+}
+.header-right:hover {
+    cursor: pointer;
+    color: #f8b839;
+}
+.header-right-icon path:hover {
+    fill: #f8b839;
+} 
 /*Section Hero*/
 .section-hero {
     margin-top: 23px;
@@ -135,6 +165,10 @@ html {
 .section-hero-item {
     border-radius: 15px;
     
+}
+.section-hero-item:hover{
+    transform: translateY(-4px);
+    box-shadow: 7px 8px 10px rgba(11, 21, 28, 0.2);
 }
 
 .grid-item1 {
@@ -177,6 +211,7 @@ html {
     
 
 }
+
 .section-hero-card-details {
     margin-top: 40px;
     
@@ -187,6 +222,8 @@ html {
     margin-left: 5px;
     
 }
+
+
 /*Third card Luxe*/
 .section-hero-card-heading3 {
     color: white;
@@ -196,6 +233,7 @@ html {
     margin-top: 0px;
     margin-bottom: 0;
 }
+
 .section-hero-cards-description3 {
     color: white;
     font-size: 30px;
@@ -232,6 +270,11 @@ html {
     max-width: 573px;
     background-color: #fff;
     border-radius: 15px;
+    transition: translateY .3s ease;
+}
+.section-services-item:hover {
+    transform: translateY(-4px);
+    box-shadow: 7px 8px 10px rgba(11, 21, 28, 0.2);
 }
 
 .section-services-description-link {
@@ -239,9 +282,8 @@ html {
     font-family: 'Muller', sans-serif;
     color: #CC9933;
     font-weight: 500;
-    
+    }
 
-}
 
 .section-services-description-text {
     font-size: 16px;
@@ -267,6 +309,7 @@ html {
     margin-left: 5px;
     padding-top: 2px;
 }
+
 /*section-advantages*/
 
 .section-advantages-list {
@@ -280,7 +323,12 @@ html {
     max-width: 276px;
     background-color: #fff;
     border-radius: 15px;
+    transition: translateY .3s ease;
 
+}
+.section-advantages-item:hover {
+transform: translateY(-4px);
+box-shadow: 7px 8px 10px rgba(11, 21, 28, 0.2);
 }
 .section-advantages-img {
     margin-bottom: 10px;
@@ -303,7 +351,11 @@ html {
     width: 374px;
     background-color: #fff;
     border-radius: 15px;
-    
+    transition: translateY .3s ease;    
+}
+.section-booking-item:hover {
+transform: translateY(-4px);
+box-shadow: 7px 8px 10px rgba(11, 21, 28, 0.2);
 }
 .section-booking-price-stars {
     display: flex;
@@ -329,10 +381,13 @@ html {
     padding: 13px 20px;
 }
 .section-booking-item-lastcard {
+    position: relative;
     background: url(/img/Размещение/9.png);
+    background-size: 100%;
     min-height: 440px;
 }
 .section-booking-item-lastcard-description {
+    position: absolute;
     display: flex;
     color: #fff;
     font-size: 20px;
@@ -370,6 +425,9 @@ html {
     margin: 0 auto;
     margin-top: 20px;
     
+}
+.form:hover {
+    box-shadow: 1px 0px 14px 3px rgba(194, 138, 19, 0.384);
 }
 .form-group {
     display: inline-flex;
@@ -467,6 +525,9 @@ select {
 .contacts-link {
     color: #CC9933;
 }
+.contacts-link:hover {
+    color: #f8b839;
+}
 .btn-contacts {
     padding: 27px 29px;
     margin-top: 45px;
@@ -500,6 +561,10 @@ select {
 .section-footer-agreement {
     color: #CC9933;
 }
+.section-footer-agreement:hover {
+    color: white;
+    cursor: pointer;
+}
 
 .footer-contacts {
     max-width: 359px;
@@ -524,6 +589,10 @@ select {
     width: 25px;
     height: 25px;
     
+}
+.footer-social-icon:hover {
+    box-shadow: 0px 0px 11px 3px rgba(251, 251, 252, 0.39);
+    border-radius: 50%;
 }
 
 .footer-social-icon-trip {
